@@ -1,7 +1,10 @@
 # de-id
 Perl and Python code for de-identifying electronic medical records
-
-
+# Prerequisites
+## Python
+* Python 3.5.2
+## Perl
+* Perl 5, Version 28, Subversion 0 (v5.28.0)
 # Running insturctions
 ## Python Code
 ### De-identification
