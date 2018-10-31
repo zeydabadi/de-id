@@ -1,4 +1,4 @@
-
+import sys
 def are_overlapped(gstart,gend,tstart,tend):
     return ( (( gstart <= tend )  and (gstart >= tstart)) or 
             ((gend <= tend) and (gend >= tstart)) or 
@@ -15,7 +15,7 @@ def are_overlapped(gstart,gend,tstart,tend):
 import re
 from collections import defaultdict
 
-def run_stats(gold_path = 'id.deid', gold_cats_path= 'id-phi.phrase', test_paht='phone.phi'):
+def run_stats(gold_path = 'id.deid', gold_cats_path= 'id-phi.phrase', test_path='age.phi'):
     """
     Inputs:
         gold_path: path to the gold standard file that does not include categories.
@@ -253,5 +253,5 @@ if __name__== "__main__":
         
     
     
-    run_stats(sys.argv[1], sys.argv[2], sys.arg[3])
+    run_stats(sys.argv[1], sys.argv[2], sys.argv[3])
     
